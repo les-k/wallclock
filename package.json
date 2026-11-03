@@ -1,0 +1,15 @@
+{
+  "name": "wallclock",
+  "version": "1.0.0",
+  "description": "Medication reminders that stay at the same clock time through daylight saving, measured across every time zone",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "test": "node --test",
+    "bench": "node bench/run.js"
+  },
+  "devDependencies": {
+    "ical.js": "^2.2.1"
+  },
+  "license": "MIT"
+}

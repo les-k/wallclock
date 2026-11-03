@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- What you type here is health information. The page is not allowed to make
+     any network request (connect-src 'none'), so it cannot send it anywhere;
+     the browser enforces that, not just this comment. -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Wallclock — pill reminders that stay on time</title>
+<meta name="description" content="Make a calendar file of your medication times that stays at the same clock time through daylight saving. Nothing is uploaded.">
+<meta name="color-scheme" content="light dark">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text y='13' font-size='13'>%E2%8F%B0</text></svg>">
+</head>
+<body>
+
+<header class="site-head">
+  <a class="brand" href="./">Wallclock</a>
+  <span class="privacy">Stays on this device</span>
+</header>
+
+<main id="app">
+  <noscript><p class="notice">Wallclock needs JavaScript to build your calendar file on this device.</p></noscript>
+</main>
+
+<p class="sr-only" id="announce" role="status" aria-live="polite"></p>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+{
+  "node": "v22.14.0",
+  "tzDatabase": "2024b",
+  "seconds": 45.1,
+  "e1": {
+    "year": 2026,
+    "time": "08:00",
+    "startsPerZone": 12,
+    "daysPerStart": 365,
+    "zones": 417,
+    "zonesWhereShortcutIsEverWrong": 131,
+    "zonesWhereShortcutIsAlwaysRight": 286,
+    "remindersTotal": 1826460,
+    "remindersWrong": 276835,
+    "pctOfAllRemindersWrong": 15.2,
+    "pctWrongInZonesWithClockChanges": 48.2,
+    "driftMinutesHistogram": [
+      {
+        "minutes": -120,
+        "count": 1078
+      },
+      {
+        "minutes": -60,
+        "count": 130459
+      },
+      {
+        "minutes": -30,
+        "count": 1092
+      },
+      {
+        "minutes": 30,
+        "count": 1092
+      },
+      {
+        "minutes": 60,
+        "count": 142050
+      },
+      {
+        "minutes": 120,
+        "count": 1064
+      }
+    ],
+    "worstDriftMinutes": 120,
+    "correctSchedule": {
+      "remindersChecked": 152205,
+      "wrong": 0,
+      "movedBecauseTheTimeDidNotExist": 0
+    }
+  },
+  "e2": {
+    "year": 2026,
+    "zonesWithAtLeastOneClockChange": 131,
+    "zonesWithNone": 286,
+    "clockChangesTotal": 262,
+    "hourAffected": [
+      {
+        "hour": "repeated 00:00",
+        "count": 2
+      },
+      {
+        "hour": "repeated 01:00",
+        "count": 65
+      },
+      {
+        "hour": "repeated 02:00",
+        "count": 46
+      },
+      {
+        "hour": "repeated 03:00",
+        "count": 11
+      },
+      {
+        "hour": "repeated 21:00",
+        "count": 1
+      },
+      {
+        "hour": "repeated 23:00",
+        "count": 6
+      },
+      {
+        "hour": "skipped 00:00",
+        "count": 6
+      },
+      {
+        "hour": "skipped 01:00",
+        "count": 10
+      },
+      {
+        "hour": "skipped 02:00",
+        "count": 100
+      },
+      {
+        "hour": "skipped 03:00",
+        "count": 12
+      },
+      {
+        "hour": "skipped 22:00",
+        "count": 1
+      },
+      {
+        "hour": "skipped 23:00",
+        "count": 2
+      }
+    ],
+    "changesBetween01and03": 244,
+    "changesBetween00and03": 252,
+    "changesOutside00to03": 10
+  }
+}

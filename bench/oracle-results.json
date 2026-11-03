@@ -1,0 +1,166 @@
+{
+  "runtime": {
+    "node": "v22.14.0",
+    "tzDatabase": "2024b"
+  },
+  "python": {
+    "python": "3.13.1",
+    "tzdata": "2026c",
+    "zones": 598
+  },
+  "check1_agreement": {
+    "years": "2000-2024",
+    "zones": 417,
+    "casesCompared": 156462,
+    "skippedZoneNotInPython": 0,
+    "byKind": {
+      "ok": 148304,
+      "gap": 4075,
+      "overlap": 4083
+    },
+    "disagreements": 6,
+    "disagreementsWhereMyAnswerReadsBackCorrectlyOnTheRuntimeClock": 6,
+    "zonesInvolved": [
+      "Europe/Chisinau"
+    ],
+    "firstFew": [
+      {
+        "zone": "Europe/Chisinau",
+        "y": 2022,
+        "m": 3,
+        "d": 27,
+        "hh": 3,
+        "mm": 30,
+        "mine": "2022-03-27T00:30:00.000Z",
+        "theirs": "2022-03-27T01:30:00.000Z",
+        "kind": "ok",
+        "myAnswerReadsBackOnRuntimeClock": true
+      },
+      {
+        "zone": "Europe/Chisinau",
+        "y": 2022,
+        "m": 10,
+        "d": 30,
+        "hh": 3,
+        "mm": 30,
+        "mine": "2022-10-30T01:30:00.000Z",
+        "theirs": "2022-10-30T00:30:00.000Z",
+        "kind": "ok",
+        "myAnswerReadsBackOnRuntimeClock": true
+      },
+      {
+        "zone": "Europe/Chisinau",
+        "y": 2023,
+        "m": 3,
+        "d": 26,
+        "hh": 3,
+        "mm": 30,
+        "mine": "2023-03-26T00:30:00.000Z",
+        "theirs": "2023-03-26T01:30:00.000Z",
+        "kind": "ok",
+        "myAnswerReadsBackOnRuntimeClock": true
+      },
+      {
+        "zone": "Europe/Chisinau",
+        "y": 2023,
+        "m": 10,
+        "d": 29,
+        "hh": 3,
+        "mm": 30,
+        "mine": "2023-10-29T01:30:00.000Z",
+        "theirs": "2023-10-29T00:30:00.000Z",
+        "kind": "ok",
+        "myAnswerReadsBackOnRuntimeClock": true
+      },
+      {
+        "zone": "Europe/Chisinau",
+        "y": 2024,
+        "m": 3,
+        "d": 31,
+        "hh": 3,
+        "mm": 30,
+        "mine": "2024-03-31T00:30:00.000Z",
+        "theirs": "2024-03-31T01:30:00.000Z",
+        "kind": "ok",
+        "myAnswerReadsBackOnRuntimeClock": true
+      },
+      {
+        "zone": "Europe/Chisinau",
+        "y": 2024,
+        "m": 10,
+        "d": 27,
+        "hh": 3,
+        "mm": 30,
+        "mine": "2024-10-27T01:30:00.000Z",
+        "theirs": "2024-10-27T00:30:00.000Z",
+        "kind": "ok",
+        "myAnswerReadsBackOnRuntimeClock": true
+      }
+    ],
+    "clockChangesIn2024ByDatabase": {
+      "Europe/Chisinau": {
+        "runtime": [
+          {
+            "at": "2024-03-31T00:00:00.000Z",
+            "fromHours": 2,
+            "toHours": 3
+          },
+          {
+            "at": "2024-10-27T00:00:00.000Z",
+            "fromHours": 3,
+            "toHours": 2
+          }
+        ],
+        "tzdata": [
+          {
+            "at": "2024-03-31T01:00:00.000Z",
+            "fromHours": 2,
+            "toHours": 3
+          },
+          {
+            "at": "2024-10-27T01:00:00.000Z",
+            "fromHours": 3,
+            "toHours": 2
+          }
+        ]
+      }
+    }
+  },
+  "check2_staleData": {
+    "window": "2025-2030",
+    "zonesCompared": 417,
+    "zonesWhereTheTwoDatabasesPredictDifferentClockChanges": 6,
+    "zones": [
+      {
+        "zone": "Africa/Casablanca",
+        "runtimeChanges2025to2030": 13,
+        "tzdataChanges2025to2030": 5
+      },
+      {
+        "zone": "Africa/El_Aaiun",
+        "runtimeChanges2025to2030": 13,
+        "tzdataChanges2025to2030": 5
+      },
+      {
+        "zone": "America/Asuncion",
+        "runtimeChanges2025to2030": 12,
+        "tzdataChanges2025to2030": 0
+      },
+      {
+        "zone": "America/Edmonton",
+        "runtimeChanges2025to2030": 12,
+        "tzdataChanges2025to2030": 3
+      },
+      {
+        "zone": "America/Vancouver",
+        "runtimeChanges2025to2030": 12,
+        "tzdataChanges2025to2030": 3
+      },
+      {
+        "zone": "Europe/Chisinau",
+        "runtimeChanges2025to2030": 12,
+        "tzdataChanges2025to2030": 12
+      }
+    ]
+  }
+}
